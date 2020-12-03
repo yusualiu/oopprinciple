@@ -2,6 +2,7 @@
 
 // Abstract class provides a template or base for any subclass.
 //abstract means no actual code, only signature no implementation
+//You cannot instantiate an object from it.
 abstract class AchievementType{
   public function name(){
     $class = (new ReflectionClass($this))->getShortName();
